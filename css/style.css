@@ -266,6 +266,35 @@ margin-bottom: 30px;
   fill: var(--white);
   background-color: var(--blue);
 }
+                          /* CLIENT */
+.client-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--black);
+margin-bottom: 50px;
+}
+.client-list{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.client-link{
+  width: 170px;
+  height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+display: block;
+padding: 16px 32px;
+fill: #AFB1B8;
+}
+.client-link:hover,
+.client-link:focus{
+border: 1px solid var(--blue);
+fill: var(--blue);
+}
                           /* FOOTER */
 .footer-list{
   margin-top: 20px;
@@ -299,6 +328,43 @@ color: rgba(255, 255, 255, 0.6);
 .footer-contact:hover,
 .footer-contact:focus{
   color: var(--blue);
+}
+                          /* JOIN */
+.join{
+display: flex;
+}
+.join-box{
+  margin-left: 70px;
+}
+.join-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white);
+margin-top: 12px;
+margin-bottom: 20px;
+}
+.join-list{
+display: flex;  
+}
+.join-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white);
+}
+.join-link:hover,
+.join-link:focus{
+  background-color: var(--blue);
+}
+.join-item:not(:last-child){
+  margin-right: 10px;
 }
                           /* PORTFOLIO */
 .menu-btn-list{
