@@ -276,6 +276,10 @@ margin-bottom: 8px;
   align-items: center;
   fill: var(--CLOUD);
 }
+.team-link-svg:hover,
+.team-link-svg:focus{
+background-color: var(--OCEAN);
+}
                           /* CUSTOMERS */
 .customers-title{
 font-family: 'Roboto';
