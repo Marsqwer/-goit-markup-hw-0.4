@@ -7,18 +7,19 @@ box-sizing: border-box;
 box-sizing: inherit;
 }
 body{
-  font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
 :root{
-  --black: #212121;
-  --gray: #757575;
-  --white: #FFFFFF;
-  --blue: #2196F3;
-  --background: #F5F4FA;
-  --size: 14px;
-  --radius: 4px;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ --IRIS:#4D5AE5;
+ --OCEAN: #404BBF;
+ --NAVY_BLUE: #2E2F42;
+ --GREEN: #31D0AA;
+ --SLATE: #434455;
+ --LIGHT_SLATE: #8E8F99;
+ --CORNFLOWER: #E7E9FC;
+ --CLOUD: #F4F4FD;
+ --NAVY_BLUE_modal: rgba(46, 47, 66, 0.4);
+ --GREY: rgba(46, 47, 66, 0.7);
 }
 p, h1, h2, h3, h4, h5, h6{
   margin: 0;
@@ -44,7 +45,7 @@ section{
 }
 .container{
   width: 100%;
-  max-width: 1170px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -52,19 +53,18 @@ section{
 }
                       /* HEADER-LOGO */
 .logo{
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.3;
 letter-spacing: 0.03em;
-color: var(--blue);
+color: var(--IRIS);
 }
 .studio{
-color: var(--black);
+color: var(--NAVY_BLUE);
 }
 .foot-studio{
- color: var(--white);
+ color: var(--CLOUD);
 }
                        /* HEADER-MENU */
 header{
@@ -72,36 +72,48 @@ padding-top: 24px;
 padding-bottom: 25px;
 position: relative;
 }
-header > .container{
+.header-box{
   display: flex;
   align-items: center;
 }
 .header-list{
   display: flex;
-  margin-left: 93px;
 }
-.header-item{
-  font-weight: 500;
-  font-size: var(--size);
-line-height: 1.14;
+.navigation{
+margin-left: 76px;
+}
+.header-link{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color: var(--black);
+color: var(--NAVY_BLUE);
 }
-.header-item:hover,
-.header-item:focus{
-  color: var(--blue);
+.header-link:hover,
+.header-link:focus{
+  color: var(--OCEAN);
 }
 .header-studia{
-  color: var(--blue);
-}
-.contact{
-  color: var(--gray);
+  color: var(--OCEAN);
 }
 .header-item:not(:last-child){
   margin-right: 50px;
 }
-.box-contact{
-  margin-left: auto;
+.header-contact{
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: var(--SLATE);
+}
+.header-contact:hover,
+.header-contact:focus{
+  color: var(--OCEAN);
+}
+.header-contact:not(:last-child){
+  margin-right: 50px;
+}
+.contact-box{
+margin-left: auto;
 }
 header::after{
   content: "";
@@ -112,60 +124,55 @@ header::after{
 }
                            /* HERO */
 .hero{
-  width: 100%;
-  background: #2F303A;
-  padding: 0;
+ width: 100%;
+background: #2F303A;
+padding-top: 188px;
+padding-bottom: 188px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
 rgba(47, 48, 58, 0.4)), url(../imges/compania.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
-.hero-box{
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 .hero-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+font-family: 'Roboto';
+font-size: 56px;
+line-height: 1.07;
+color: #FFFFFF;
 text-align: center;
 letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--white);
 }
                            /* BUTTON */
 .btn{
-  width: 200px;
-  height: 50px;
+width: 200px;
+height: 50px;
 font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
+font-weight: 500;
 font-size: 16px;
-line-height: 1.88;
+line-height: 1.5;
 display: flex;
 align-items: center;
 text-align: center;
 justify-content: center;
-letter-spacing: 0.06em;
+letter-spacing: 0.04em;
 color: #FFFFFF;
-background: var(--blue);
-box-shadow: var(--shadow);
-border-radius: var(--radius);
+background: var(--IRIS);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 margin: 0 auto;
 margin-top: 30px;
 border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
                          /* ADVANTAGES */
-.box{
-  padding-top: 94px;
-  padding-bottom: 0;
-}
 .advantages-list{
-  width: 1170px;
   display: flex;
+  gap: 24px;
+}
+.box{
+padding-bottom: 0;
+}
+.advantages-item{
+width: calc((100% - 72px) / 4); /*(ВАЖНО ЗНАТЬ)*/
 }
 .advantages-svg{
 width: 270px;
